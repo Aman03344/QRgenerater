@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Badeen+Display&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lilita+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Potta+One&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 10px; /* Added for spacing on smaller screens */
+}
+
+.qrCon {
+    width: 450px;
+    height: 450px;
+    border-radius: 15%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    box-shadow: 6px 6px;
+    padding: 20px; /* Added padding for inner spacing */
+}
+
+.input-con {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: larger;
+    box-shadow: 5px 5px;
+    background-color: ghostwhite;
+}
+
+input {
+    width: 85%;
+    height: 56px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 16px; /* Adjusted font size for better readability */
+}
+
+button {
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    border: none;
+    font-size: 21px;
+    background-color: rgb(208, 42, 208);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 -3px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.heading {
+    font-family: "Agu Display", serif;
+    margin-top: 10px;
+    text-align: center; /* Centered heading */
+}
+
+.qr-image {
+    width: 90%;
+    height: 250px;
+    border: 2px solid black;
+    box-shadow: 5px 5px;
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input::placeholder {
+    font-size: 17px;
+}
+
+/* Media Query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+
+    /* Resetting some universal styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 1rem; 
+        line-height: 2px;
+    }
+
+    .qrCon {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 4px 4px  rgb(0, 0, 0); 
+    }
+
+    .input-con {
+        width: 100%;
+        height: 50px;
+        font-size: 16px; /* Adjusted font size */
+    }
+
+    input {
+        width: 85%;
+        height: 45px; /* Adjusted input field size */
+        font-size: 14px;
+    }
+
+    .qr-image {
+        width: 100%;
+        max-width: 250px; /* Adjusted the max width */
+        height: auto;
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    /* Hide button */
+    #btn {
+        display: none;
+    }
+}
